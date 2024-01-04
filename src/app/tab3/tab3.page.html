@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Crear Pedido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Cliente</ion-label>
+    <ion-input type="text" [(ngModel)]="cliente"></ion-input>
+  </ion-item>
+
+
+    <ion-header>
+      <ion-row>
+        <ion-col>Producto</ion-col>
+        <ion-col>Cantidad</ion-col>
+        <ion-col>Precio</ion-col>
+      </ion-row>
+    </ion-header>
+    <ion-row *ngFor="let producto of productos">
+      <ion-col>{{ producto.nombre }}</ion-col>
+      <ion-col>
+        <ion-input type="number" [(ngModel)]="producto.cantidad"></ion-input>
+      </ion-col>
+      <ion-col>{{ producto.precio }}</ion-col>
+    </ion-row>
+
+
+  <ion-button expand="full" (click)="guardarPedido()">Guardar</ion-button>
+</ion-content>

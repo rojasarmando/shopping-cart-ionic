@@ -1,0 +1,32 @@
+ion-item{
+    --background: #3880ff;
+    --color: #fff;
+}
+ion-button{
+    --background: #062f77;
+    margin-top: 30px;
+}
+
+ion-content.wrapper {
+    position: relative;
+  }
+  
+  ion-content.wrapper form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .rounded-logo {
+    width: 180px; 
+    height: 180px; 
+
+  }
+
+
+  
+ 
